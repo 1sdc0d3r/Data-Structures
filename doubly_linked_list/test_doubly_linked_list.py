@@ -38,7 +38,7 @@ class DoublyLinkedListTests(unittest.TestCase):
         self.assertEqual(len(self.dll), 1)
         self.assertEqual(self.dll.remove_from_head(), 2)
         self.assertEqual(len(self.dll), 0)
-        
+
         self.dll.add_to_head(55)
         self.assertEqual(len(self.dll), 1)
         self.assertEqual(self.dll.remove_from_head(), 55)
@@ -95,12 +95,16 @@ class DoublyLinkedListTests(unittest.TestCase):
         self.assertEqual(self.dll.head.value, 40)
 
         self.dll.move_to_end(self.dll.head)
+        # print("*"*10, "HEAD", self.dll.head.value)
+        # print("*"*10, "headP", self.dll.head.prev.value)
         self.assertEqual(self.dll.tail.value, 40)
         self.assertEqual(self.dll.tail.prev.value, 1)
         self.assertEqual(len(self.dll), 2)
-
+        # print("*"*10, "headP", self.dll.head.prev.value)
+        # print("*"*10, "HEAD", self.dll.head.value)
         self.dll.add_to_tail(4)
         self.dll.move_to_end(self.dll.head.next)
+
         self.assertEqual(self.dll.tail.value, 40)
         self.assertEqual(self.dll.tail.prev.value, 4)
         self.assertEqual(len(self.dll), 3)
@@ -135,9 +139,15 @@ class DoublyLinkedListTests(unittest.TestCase):
         self.assertEqual(self.dll.head.value, 1)
         self.assertEqual(self.dll.tail.value, 6)
         self.assertEqual(len(self.dll), 2)
-
+# !!!!!!!!!!!!!!!!!
+        # print("*"*10, "headP", self.dll.head.prev.value)
+        # print("*"*10, "HEAD", self.dll.head.value)
+        # print("*"*10, "headN", self.dll.head.next.value)
+        # print("*"*10, "tailP", self.dll.tail.prev.value)
+        # print("*"*10, "TAIL", self.dll.tail.value)
+        # print("*"*10, "tailN", self.dll.tail.next.value)
+# !!!!!!!!!!!!!!!!!
         self.dll.delete(self.dll.head)
-        self.assertEqual(self.dll.head.value, 6)
         self.assertEqual(self.dll.tail.value, 6)
         self.assertEqual(len(self.dll), 1)
 
