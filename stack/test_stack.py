@@ -36,6 +36,7 @@ class QueueTests(unittest.TestCase):
         self.assertEqual(len(self.stack), 2)
         self.assertEqual(self.stack.pop(), 101)
         self.assertEqual(len(self.stack), 1)
+        print(self.stack.tail.value)
         self.assertEqual(self.stack.pop(), 100)
         self.assertEqual(len(self.stack), 0)
         self.assertIsNone(self.stack.pop())
