@@ -3,26 +3,33 @@ Answer the following questions for each of the data structures you implemented a
 ## Stack
 
 1. What is the runtime complexity of `push`?
-
+<!-- O(1) -->
 2. What is the runtime complexity of `pop`?
-
+<!-- O(n) -->
 3. What is the runtime complexity of `len`?
+<!-- O(1) -->
 
 ## Queue
 
 1. What is the runtime complexity of `enqueue`?
+<!-- O(1) -->
 
 2. What is the runtime complexity of `dequeue`?
+<!-- O(1) -->
 
 3. What is the runtime complexity of `len`?
+<!-- O(1) -->
 
 ## Binary Search Tree
 
-1. What is the runtime complexity of `insert`? 
+1. What is the runtime complexity of `insert`?
+<!-- O(1) -->
 
 2. What is the runtime complexity of `contains`?
+<!-- O(1) -->
 
-3. What is the runtime complexity of `get_max`? 
+3. What is the runtime complexity of `get_max`?
+<!-- O(1) -->
 
 ## Heap
 
@@ -38,24 +45,34 @@ Answer the following questions for each of the data structures you implemented a
 
 ## Doubly Linked List
 
-1. What is the runtime complexity of `ListNode.insert_after`?
+1.  What is the runtime complexity of `ListNode.insert_after`?
+<!-- O(1) -->
 
-2. What is the runtime complexity of `ListNode.insert_before`?
+2.  What is the runtime complexity of `ListNode.insert_before`?
+<!-- O(1) -->
 
-3. What is the runtime complexity of `ListNode.delete`?
+3.  What is the runtime complexity of `ListNode.delete`?
+<!-- O(1) -->
 
-4. What is the runtime complexity of `DoublyLinkedList.add_to_head`?
+4.  What is the runtime complexity of `DoublyLinkedList.add_to_head`?
+<!-- O(1) -->
 
-5. What is the runtime complexity of `DoublyLinkedList.remove_from_head`?
+5.  What is the runtime complexity of `DoublyLinkedList.remove_from_head`?
+<!-- O(1) -->
 
-6. What is the runtime complexity of `DoublyLinkedList.add_to_tail`?
+6.  What is the runtime complexity of `DoublyLinkedList.add_to_tail`?
+<!-- O(1) -->
 
-7. What is the runtime complexity of `DoublyLinkedList.remove_from_tail`?
+7.  What is the runtime complexity of `DoublyLinkedList.remove_from_tail`?
+<!-- O(1) -->
 
-8. What is the runtime complexity of `DoublyLinkedList.move_to_front`?
+8.  What is the runtime complexity of `DoublyLinkedList.move_to_front`?
+<!-- O(1) -->
 
-9. What is the runtime complexity of `DoublyLinkedList.move_to_end`?
+9.  What is the runtime complexity of `DoublyLinkedList.move_to_end`?
+<!-- O(1) -->
 
 10. What is the runtime complexity of `DoublyLinkedList.delete`?
-
-    a. Compare the runtime of the doubly linked list's `delete` method with the worst-case runtime of the JS `Array.splice` method. Which method generally performs better?
+    <!-- O(1) -->
+        a. Compare the runtime of the doubly linked list's `delete` method with the worst-case runtime of the JS `Array.splice` method. Which method generally performs better?
+    <!-- O(n) -->
