@@ -11,13 +11,6 @@ This part of the project comprises two days:
 """
 
 
-# class Node:
-#     def __init__(self, value):
-#         self.value = value
-#         self.left = None
-#         self.right = None
-
-
 class BinarySearchTree:
     def __init__(self, value):
         self.value = value
@@ -25,7 +18,6 @@ class BinarySearchTree:
         self.right = None
 
     # Insert the given value into the tree
-
     def insert(self, value):
         node = BinarySearchTree(value)
         if not self.value:
