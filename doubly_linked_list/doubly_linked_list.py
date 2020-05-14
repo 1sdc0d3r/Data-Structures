@@ -57,9 +57,7 @@ class DoublyLinkedList:
 
     def add_to_head(self, value):
         self.length += 1
-        current_head = self.head
         new_node = ListNode(value)
-        # self.head = ListNode(value, None, current_head)
         if not self.head and not self.tail:
             self.head = new_node
             self.tail = new_node
@@ -67,26 +65,6 @@ class DoublyLinkedList:
             new_node.next = self.head
             self.head.prev = new_node
             self.head = new_node
-        # if self.head == self.tail:
-        #     self.tail.prev = self.head
-        #     self.head.next = current_head
-        #     # self.prev = self.head
-
-        # elif current_head:
-        #     self.head.next = current_head
-        # else:
-        #     self.tail = self.head
-
-        # if self.head == self.tail:
-        #     self.head = ListNode(value, None, current_head)
-
-        # elif not current_head:
-        #     self.head = ListNode(value)
-        #     self.tail = ListNode(value)
-
-        # else:
-        #     self.head = ListNode(value, None, current_head)
-        #     current_head.prev = self.head
 
     """Removes the List's current head node, making the
     current head's next node the new head of the List.
@@ -101,6 +79,7 @@ class DoublyLinkedList:
 
         elif current_head:
             self.head = current_head.next
+            self.head.prev = None
 
         return current_head.value
 

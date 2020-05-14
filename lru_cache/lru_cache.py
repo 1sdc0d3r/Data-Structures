@@ -34,7 +34,7 @@ class LRUCache:
         prev_head = self.head
         if key in self.storage:
             current = self.head
-            while current.next and list(current.value)[0] != key:
+            while list(current.value)[0] != key:
                 current = current.next
 
             self.head = current
@@ -66,16 +66,18 @@ class LRUCache:
         if key in self.storage:
             self.storage[key] = value
             current = self.head
-            while current.next and list(current.value)[0] != key:
+            while list(current.value)[0] != key:
                 current = current.next
             # print("current", current.value)
 
             self.head = new_node
             self.head.next = prev_head
             prev_head.prev = self.head
+            prev_current = current
 
             current.prev.next = current.next
-            current.next.prev = current.prev
+
+            prev_current.next.prev = current.prev
 
         elif not self.head:
             self.length += 1
